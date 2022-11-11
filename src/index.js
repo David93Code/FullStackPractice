@@ -1,7 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import axios from "axios";
 import App from "./App";
+
+// const promise = axios.get("http://localhost:3001/notes");
+
+// promise.then((response) => {
+//   console.log(response);
+// });
+
+axios.get("http://localhost:3001/notes").then((response) => {
+  const notes = response.data;
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <App notes={notes} />
+  );
+});
+// console.log(promise);
+
+const promise2 = axios.get("http://localhost:3001/foobar");
+console.log(promise2);
 
 const notes = [
   {
@@ -27,8 +45,4 @@ const notes = [
 const result = notes.map((note) => note.id);
 console.log(result);
 
-const root = ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App notes={notes} />
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
