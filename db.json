@@ -45,7 +45,7 @@
     {
       "content": "jesse",
       "date": "2022-11-21T08:19:37.029Z",
-      "important": false,
+      "important": true,
       "id": 8
     },
     {
@@ -57,7 +57,7 @@
     {
       "content": "toni",
       "date": "2022-11-21T09:03:17.200Z",
-      "important": false,
+      "important": true,
       "id": 10
     }
   ]

@@ -41,10 +41,15 @@ const App = (props) => {
       setNotes(notes.map(note => note.id !== id ? note : returnedNote))
     // })
     })
+    .catch(error => {
+      alert(
+        `the note '${note.content}' was already deleted from server`
+      )
+      setNotes(notes.filter(n => n.id !== id))
+    })
   }
 
-  useEffect(hook, [])
-  console.log("render", notes.length, "notes");
+
 
   const addNote = (event) => {
     event.preventDefault();
