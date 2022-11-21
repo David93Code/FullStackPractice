@@ -27,13 +27,13 @@
     {
       "content": "david",
       "date": "2022-11-17T12:09:11.391Z",
-      "important": false,
+      "important": true,
       "id": 5
     },
     {
       "content": "arto",
       "date": "2022-11-17T12:14:18.148Z",
-      "important": false,
+      "important": true,
       "id": 6
     },
     {
@@ -41,6 +41,24 @@
       "date": "2022-11-17T12:18:13.282Z",
       "important": true,
       "id": 7
+    },
+    {
+      "content": "jesse",
+      "date": "2022-11-21T08:19:37.029Z",
+      "important": false,
+      "id": 8
+    },
+    {
+      "content": "jesse",
+      "date": "2022-11-21T08:19:37.029Z",
+      "important": true,
+      "id": 9
+    },
+    {
+      "content": "toni",
+      "date": "2022-11-21T09:03:17.200Z",
+      "important": false,
+      "id": 10
     }
   ]
 }
